@@ -1,6 +1,6 @@
 # PowerShell
 
-Various PowerShell functions and scripts.  These are published as [WFTools](https://www.powershellgallery.com/packages/WFTools/0.1.39) on the PowerShell Gallery (thanks to @psrdrgz for the idea!)
+Various PowerShell functions and scripts.  These are published as [WFTools](https://www.powershellgallery.com/packages/WFTools/) on the PowerShell Gallery (thanks to @psrdrgz for the idea!)
 
 Two functions have been migrated to their own repositories to simplify and enable improved collaboration.  Copies remain here for historical purposes and may be updated:
 
