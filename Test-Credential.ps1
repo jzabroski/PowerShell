@@ -50,16 +50,16 @@
     #>
     [cmdletbinding(DefaultParameterSetName = 'Domain')]
     param(
-        [parameter(ValueFromPipeline=$true)]
+        [Parameter(ValueFromPipeline=$true,Position=0)]
         [System.Management.Automation.PSCredential]$Credential = $( Get-Credential -Message "Please provide credentials to test" ),
 
-        [validateset('Domain','Machine', 'ApplicationDirectory')]
+        [ValidateSet('Domain','Machine', 'ApplicationDirectory')]
         [string]$Context = 'Domain',
         
-        [parameter(ParameterSetName = 'Machine')]
+        [Parameter(ParameterSetName = 'Machine')]
         [string]$ComputerName,
 
-        [parameter(ParameterSetName = 'Domain')]
+        [Parameter(ParameterSetName = 'Domain')]
         [string]$Domain = $null
     )
     Begin
